@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+    
+    <nav class="CreateNav">
+        <div>Khaatabook</div>
+        <div class="navdiv"><a href="/">Home</a>
+            <a href="/create">Create New Hisab</a>
+        
+        </div>
+        
+        </nav>
+
+    <div class="top">
+        <div id="one"><h2>All Hisaab Kitaab</h2></div>
+
+        <div class="bottom" style="display: flex; width:50% ;flex-direction: column; gap: 20px;">
+
+            <% files.forEach((file) => { %>
+                <div  class="task">
+                    <span><%= file %></span>
+                    <div style="display: flex; justify-content: space-between; width: 80%;">
+                        <% let url1 = `/hisaab/${file}` %>
+                    <a href= " <%= url1 %> " >
+                       <span style="height: 20px; width: 20px;">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 64"><path fill="currentColor" d="M32 2C15.432 2 2 15.432 2 32s13.432 30 30 30s30-13.432 30-30S48.568 2 32 2m1.693 46V37.428H15V27.143h18.693V16L49 32z"/></svg>
+                       </span>
+                    </a>
+                    <div  style="display: flex; gap: 20px;">
+                        <% let url2 = `/edit/${file}` %>
+                        <a href= " <%= url2 %> ">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20.71 7.04c-.34.34-.67.67-.68 1c-.03.32.31.65.63.96c.48.5.95.95.93 1.44s-.53 1-1.04 1.5l-4.13 4.14L15 14.66l4.25-4.24l-.96-.96l-1.42 1.41l-3.75-3.75l3.84-3.83c.39-.39 1.04-.39 1.41 0l2.34 2.34c.39.37.39 1.02 0 1.41M3 17.25l9.56-9.57l3.75 3.75L6.75 21H3z"/></svg>
+                        </a>
+        
+                        <% let url3 = `/delete/${file}` %>
+                        <a href= " <%= url3 %> ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7 21q-.825 0-1.412-.587T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413T17 21zm2-4h2V8H9zm4 0h2V8h-2z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                
+           <% })%>
+
+       
+        
+        
+    </div>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-edit{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    padding: 2px 4px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    background-color:#007FFF ;
+    cursor: pointer;
+}
+
+form textarea {
+    height: 200px;
+    width: 450px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: azure;
+    border-radius: 10px;
+}
+

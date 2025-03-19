@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ nav{
+    
+    display: flex;
+    background-color:aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* overflow-x: hidden; */
+}
+.navbox{
+    display: flex;
+    gap: 2rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#one{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 25vh;
+    padding: 1rem 3rem;
+    font-size: larger;
+}
+
+.top{
+    /* background-color: red; */
+    height: 100vh;    
+}
+
+.bottom{
+    padding: 1rem 3rem;
+    font-size: large;    
+}
+
+.task{
+    height: 35px;
+    background-color: yellow;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid black;
+    
+    
+}
+h1{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.navdiv{   
+    display: flex;
+    gap: 30px;
+}
+
+.CreateNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    font: bold;
+}
+
+.bottom-Create-div{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Createinput{
+    height: 25px;
+    width: 45%;
+    background-color:azure;
+    border: none;
+    outline: none;
+    padding : 3px 5px;
+    border-radius: 10px;
+}
+
+#createText{
+    height: 200px;
+    width: 450px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+button{
+    background-color : #007FFF;
+    padding: 4px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+    
+}
+
+#create-button:hover{
+    background-color: blue;
+}

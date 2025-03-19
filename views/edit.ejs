@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style2.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <nav class="CreateNav">
+      <div>Khaatabook</div>
+      <div class="navdiv">
+        <a href="">Home</a>
+        <a href="">Create New Hisab</a>
+      </div>
+    </nav>
+
+    <div style="margin: 30px;"><h3>Khaatabook</h3></div>
+    <div style="margin: 30px;">
+        <div style="margin-bottom: 10px;">
+            <h3>You'r editing hisaab of <span style="color: skyblue;"><%= date %></span> date</h3>
+        </div>
+
+        <% let url = `/update/${filename}`%>
+        <form method="post" action= <%= url %> class="form-edit">
+          <textarea placeholder="Enter Something" name="updatdText" id="updatdText"><%= data %></textarea>
+
+
+
+          <button type="submit">Update Hissab</button>
+
+
+
+
+        </form>
+    </div>
+  </body>
+</html>
